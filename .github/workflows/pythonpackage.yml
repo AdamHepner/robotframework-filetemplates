@@ -31,5 +31,8 @@ jobs:
       run: |
         pip install pytest
         pytest
-        
+    - name: Test with Robot Framework
+      run: |
+        pip install robotframework
+        robot --outputdir out --pythonpath robotframework-filetemplates testdata/test.robot
         
